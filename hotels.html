@@ -39,7 +39,75 @@
 
  <main class="main-inner">
      <section class="hotels-search">
-       <h1 class="hotels-search">Гостиницы Седоны</h1>
+       <h1 class="hotels-search-title">Гостиницы Седоны</h1>
+       
+       <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <img class="main-page" src="" alt="иконка">
+            </a>
+           </li>
+         <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+        </ul>
+        
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+  
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>
+            </li>
+            </ul>
+            </fieldset>
+
+           <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="hotel" checked>
+              Гостиница
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="motel">
+              Мотель
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="apartments">
+              Апартаменты
+            </label>
+          </li>
+          </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, Р</legend>
+          </fieldset>
+
+            <button class="button" type="submit">Применить</button>
+          </form>
      </section>
 
 
