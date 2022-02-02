@@ -282,3 +282,170 @@ body {
   background-color: #FFFFFF;
 }
 
+.hotels-search {
+  background-color: #83B3D3;
+  color: #ffffff ;
+  background-image: url("images/catalog-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.hotels-search-title {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 78px;
+  font-size: 60px;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.control-input {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 39px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.select-control li {
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.hotels-card-title {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 31px;
+  font-size: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.hotels-card-type {
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.hotels-card-price {
+  font-size: 18px;
+  line-height: 23px;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.hotels-card-more  {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 21px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257
+}
+.hotels-card-favorites  {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 21px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.button-rating {
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+.download-more-button {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.pagination {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.subtitle-email-hotel {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 700, bold;
+  line-height: 36px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.description-email-hotel {
+  font-family: "PT Sans", sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
