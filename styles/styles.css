@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,27 +11,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #242424;
@@ -40,8 +27,6 @@ body {
 }
 
 .navigation-item button {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 20px;
   font-size: 16px;
@@ -57,7 +42,6 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-size: 20px;
   font-weight: bold;
@@ -69,14 +53,12 @@ body {
 .main-index {
   background-color: #ffffff;
   color: #000000;
-  background-image: url("images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 .main-index-title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
@@ -88,16 +70,11 @@ body {
 }
 
 .caption {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   line-height: 36px;
   font-size: 22px;
-  font-weight: normal;
-  font-style: normal;
   text-align: center;
   background-color: #ffffff;
   color: #000000;
-
 }
 
 .advantages-town-list {
@@ -105,8 +82,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 28px;
   font-size: 24px;
@@ -117,18 +92,11 @@ body {
 }
 
 .advantages-description {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 18px;
   text-align: center;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
 .advantages-title-light-blue {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 28px;
   font-size: 24px;
@@ -139,19 +107,12 @@ body {
 }
 
 .advantages-light-blue {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 18px;
   text-align: center;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-title-food {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 28px;
   font-size: 24px;
@@ -162,19 +123,12 @@ body {
 }
 
 .advantages-food {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 18px;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .advantages-title-road {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 28px;
   font-size: 24px;
@@ -185,19 +139,12 @@ body {
 }
 
 .advantages-road {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 18px;
   text-align: center;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .subtitle-search {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 36px;
   font-size: 30px;
@@ -208,9 +155,6 @@ body {
 }
 
 .description-search {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
@@ -218,8 +162,6 @@ body {
   background-color: #FFFFFF;
 }
 .button-search {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 36px;
   font-size: 20px;
@@ -230,8 +172,6 @@ body {
 }
 
 .subtitle-email {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 36px;
   font-size: 30px;
@@ -242,9 +182,6 @@ body {
 }
 
 .description-email {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
@@ -259,8 +196,6 @@ body {
 }
 
 .newsletter-button {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 26px;
   font-size: 20px;
@@ -271,9 +206,6 @@ body {
 }
 
 .phone-number {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
   line-height: 40px;
   font-size: 40px;
   text-align: center;
@@ -285,14 +217,12 @@ body {
 .hotels-search {
   background-color: #83B3D3;
   color: #ffffff ;
-  background-image: url("images/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 .hotels-search-title {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 78px;
   font-size: 60px;
@@ -325,17 +255,15 @@ body {
 .button {
   font-size: 16px;
   line-height: 21px;
-  font-style: normal;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
 
 .select-control {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 39px;
   font-size: 30px;
@@ -343,7 +271,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
-.select-control li {
+.select-control-list {
   font-size: 18px;
   line-height: 23px;
   font-style: normal;
@@ -351,8 +279,6 @@ body {
   background-color: #FFFFFF;
 }
 .hotels-card-title {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 31px;
   font-size: 24px;
@@ -374,23 +300,21 @@ body {
   background-color: #FFFFFF;
 }
 .hotels-card-more  {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 21px;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756257
 }
 .hotels-card-favorites  {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 21px;
   font-size: 16px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -398,16 +322,12 @@ body {
 .button-rating {
   font-size: 16px;
   line-height: 21px;
-  font-style: normal;
-  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
 }
 .download-more-button {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   font-size: 20px;
   line-height: 26px;
@@ -417,8 +337,6 @@ body {
   background-color: #83B3D3;
 }
 .pagination {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   font-size: 20px;
   line-height: 26px;
@@ -428,8 +346,6 @@ body {
   background-color: #83B3D3;
 }
 .subtitle-email-hotel {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
   font-weight: 700, bold;
   line-height: 36px;
   font-size: 30px;
@@ -440,12 +356,28 @@ body {
 }
 
 .description-email-hotel {
-  font-family: "PT Sans", sans-serif;;
-  font-style: normal;
-  font-weight: 400;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
+}
+.number-hotels {
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

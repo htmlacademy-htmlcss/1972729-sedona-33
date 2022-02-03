@@ -114,12 +114,10 @@
       <section class="select-control">
         <p class="select-control">Найдено гостиниц: 38
         </p>
-          <select class="select-control" aria-label="Сортировка">
-            <ul class="select-control">
-              <li><option value="cheap">Сначала дешёвые</option></li>
-              <li><option value="popular">Сначала популярные</option></li>
-              <li><option value="expensive">Сначала дорогие</option></li>
-            </ul>
+          <select class="select-control-list" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
           </select>
             <a class="button" href="#">
               <span class="visually-hidden">Показать карточки</span>
@@ -143,7 +141,7 @@
               <span class="hotels-card-price">От 4000 ₽</span>
                 <a class="hotels-card-more button" href="#">Подробнее</a>
                 <a class="hotels-card-favorites button" href="#">В Избранное</a>
-                  <button class="button-rating">Рейтинг: 8,5</button>
+                  <div class="button-rating">Рейтинг: 8,5</div>
                     <ul class="stars-number-amara">
                       <li><img src="" alt="количество звёзд"></li>
                       <li><img src="" alt="количество звёзд"></li>
@@ -161,7 +159,7 @@
                 <span class="hotels-card-price">От 3000 ₽</span>
                   <a class="hotels-card-more button" href="#">Подробнее</a>
                   <a class="hotels-card-favorites button" href="#">В Избранное</a>
-                    <button class="button-rating">Рейтинг: 8,9</button>
+                    <div class="button-rating">Рейтинг: 8,9</div>
                       <ul class="stars-number-amara">
                         <li><img src="" alt="количество звёзд"></li>
                         <li><img src="" alt="количество звёзд"></li>
@@ -178,7 +176,7 @@
                 <span class="hotels-card-price">От 2000 ₽</span>
                   <a class="hotels-card-more button" href="#">Подробнее</a>
                     <a class="hotels-card-favorites button" href="#">В Избранное</a>
-                      <button class="button-rating">Рейтинг: 9,2</button>
+                      <div class="button-rating">Рейтинг: 9,2</div>
                         <ul class="stars-number-amara">
                           <li><img src="" alt="количество звёзд"></li>
                           <li><img src="" alt="количество звёзд"></li>
@@ -194,7 +192,7 @@
                 <span class="hotels-card-price">От 3000 ₽</span>
                   <a class="hotels-card-more button" href="#">Подробнее</a>
                     <a class="hotels-card-favorites button" href="#">В Избранное</a>
-                      <button class="button-rating">Рейтинг: 9,2</button>
+                      <div class="button-rating">Рейтинг: 9,2</div>
                         <ul class="stars-number-amara">
                           <li><img src="" alt="количество звёзд"></li>
                           <li><img src="" alt="количество звёзд"></li>
@@ -230,7 +228,7 @@
         </ul>
 
         <form class="pagination" action="https://echo.htmlacademy.ru/" method="get">
-          <p><i>Гостиниц на странице</i></p>
+          <p class="number-hotels"><i>Гостиниц на странице</i></p>
             <select name="pagination">
               <option value="1">1</option>
               <option value="2">2</option>
