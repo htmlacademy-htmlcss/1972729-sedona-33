@@ -97,6 +97,14 @@ body {
   margin: 0 auto;
 }
 
+.title-container {
+  display: block;
+  width: 1200px;
+  height: 767px;
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
@@ -123,7 +131,8 @@ body {
 
 .advantages {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -254,9 +263,18 @@ body {
 }
 
 .email {
+  display: block;
+  width: 1200px;
+  height: 417px;
   background-image: url("images/background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .newsletter-button {
