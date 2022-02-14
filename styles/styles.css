@@ -97,14 +97,6 @@ body {
   margin: 0 auto;
 }
 
-.title-container {
-  display: block;
-  width: 1200px;
-  height: 282px;
-  margin: 0;
-  padding: 0;
-}
-
 .logo {
   display: block;
   margin: 0 auto;
@@ -136,7 +128,7 @@ body {
 
 .advantages-town-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -150,11 +142,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  height: 384px;
 }
 
-.advantages-item {
+.more-list-item {
   width: 400px;
-  height: 384px;
 }
 
 .advantages-title {
@@ -318,7 +310,9 @@ body {
   margin-left: 53px;
 }
 
-.hotels-search {
+.hotels-search-container {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   height: 408px;
   background-color: #83B3D3;
@@ -328,13 +322,16 @@ body {
     background-repeat: no-repeat;
 }
 
+.catalog-filter {
+  display: flex;
+  flex-direction: row;
+}
 
 .hotels-search-title {
   font-weight: 700, bold;
   line-height: 78px;
   font-size: 60px;
   color: #FFFFFF;
-  background-color: #83B3D3;
 }
 
 .hotels-list {
