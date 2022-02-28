@@ -153,23 +153,39 @@ body {
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 384px 384px 384px;
   width: 1200px;
-  height: 1535px;
+  height: 1152px;
 }
 
 .town-list-item {
   display: flex;
+  flex-direction: column;
   width: 400px;
   height: 384px;
-
   margin: 0;
   padding: 0;
   text-align: center;
   list-style-type: none;
+
+}
+
+.town-list-item .sedona {
+  grid-column: -1/2;
+}
+
+.town-list-item .mountains {
+  grid-column: 1/3;
 }
 
 .advantages-more-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  width: 1200px;
+  height: 384px;
+}
+
+.more-list-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -183,6 +199,8 @@ body {
 }
 
 .advantages-title {
+  margin-top: 98px;
+  margin-bottom: 30px;
   font-weight: 700, bold;
   line-height: 28px;
   font-size: 24px;
@@ -246,8 +264,10 @@ body {
 }
 
 .page-search {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
-  height: 417px;
+  min-height: 417px;
   text-align: center;
 }
 
