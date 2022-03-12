@@ -34,7 +34,7 @@ body {
 }
 
 .navigation-item button {
-  padding: 11px 25px;
+  padding: 8px 28px;
   margin-top: 14px;
   border-radius: 5px;
   font-family: PT Sans;
@@ -308,7 +308,7 @@ body {
   background-color: #83B3D3;
 }
 
-.advantages-description-number {
+.advantages-number {
   margin-bottom: 30px;
   color: #FFFFFF;
 }
@@ -325,8 +325,8 @@ body {
   list-style-type: none;
 }
 
-.advantages-light-blue-number {
-  margin-bottom: 30px;
+.blue-number {
+  padding-left: 170px;
   margin: auto;
   color: #000000;
 }
@@ -337,10 +337,6 @@ body {
   margin-bottom: 79px;
   text-align: center;
   color: #000000;
-}
-
-.advantages-light-blue-number {
-  margin-bottom: 30px;
 }
 
 .more-title-food {
@@ -444,7 +440,7 @@ body {
   background-color: #FFFFFF;
 }
 .button-search {
-  padding: 15px 147px;
+  padding: 15px 80px;
   margin: auto;
   margin-bottom: 93px;
   border-radius: 10px;
@@ -578,7 +574,7 @@ body {
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 30px;
-  padding-bottom: 83px;
+  padding-bottom: 40px;
   color: #ffffff ;
   background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
@@ -591,8 +587,8 @@ body {
 }
 
 .hotels-search-title {
+  margin-bottom: 0px;
   margin-right: 601px;
-  margin-left: 71px;
   font-weight: 700, bold;
   line-height: 78px;
   font-size: 60px;
@@ -619,16 +615,15 @@ body {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
-
+  margin-top: 45px;
 }
 
 .catalog-filter-list {
-  align-items: flex-start;
+  margin-left: -40px;
 }
 
 .catalog-filter-type {
-
-  align-items: flex-start;
+  margin-left: -40px;
 }
 
 .catalog-filter-group-form {
@@ -670,7 +665,6 @@ body {
 
 .catalog-filter-title {
   margin-right: 67px;
-  margin-top: 45px;
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
