@@ -67,15 +67,14 @@
               </ul>
           </section>
           <section class="catalog-filter">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <h2 class="visually-hidden">Параметры поиска</h2>
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group group-filter-first">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                          <img class="control-input" src="images/hotels-catalog/white square.svg" alt="квадрат">
                           Бассейн
                         </label>
                       </li>
@@ -95,8 +94,8 @@
                 </fieldset>
 
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья</legend>
-                    <ul class="catalog-filter-type">
+                  <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input class="control-input" type="radio" name="hotel" checked>
@@ -117,11 +116,13 @@
                       </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group-form">
+                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость, ₽</legend>
+                  <input class="price-input" type="number" name="from" value="0" placeholder="от">
+                  <input class="price-input" type="number" name="to" value="9000" placeholder="до">
                 </fieldset>
                 <div class="button-catalog-group">
-                  <button class="button-catalog" type="submit">Применить</button>
+                  <button class="button-submit" type="submit">Применить</button>
                   <button class="button-reset" type="reset">Сбросить</button>
                 </div>
             </form>
@@ -135,16 +136,23 @@
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-            <a class="button-icons" href="#">
+          <div class="sort-button-wrapper">
+            <a class="sort-button-icons" href="#">
+              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="button-icons" href="#">
+            <a class="sort-button-icons" href="#">
+              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
               <span class="visually-hidden">На весь экран</span>
             </a>
-            <a class="button-icons" href="#">
+            <a class="sort-button-icons" href="#">
+              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
               <span class="visually-hidden">Показать список</span>
             </a>
-
+          </div>
       </section>
       <section>
         <ul class="hotels-list">
@@ -197,7 +205,7 @@
             </div>
             <div class="button-card">
                   <a class="hotels-card-more button" href="#">Подробнее</a>
-                    <a class="hotels-card-favorites button" href="#">В Избранное</a>
+                    <a class="hotels-card-favorites button" href="#">В Избранном</a>
             </div>
                       <div class="button-rating">Рейтинг: 9,2</div>
                         <div class="stars-number-villas">
@@ -224,14 +232,14 @@
                         </div>
           </li>
         </ul>
-          <div class="download-more-button">
+          <div class="show-more-wrapper">
             <button class="download-more-button" type= "button">Загрузить ещё</button>
           </div>
       </section>
-      <section class="pagination">
-        <ul class="pagination">
+      <section class="pagination-wrapper">
+        <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -251,29 +259,26 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-
-        <form class="pagination-form" action="https://echo.htmlacademy.ru/" method="get">
-          <p class="number-hotels"><i>Гостиниц на странице</i></p>
-            <select name="pagination">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="1">3</option>
-              <option value="2">4</option>
-              <option value="1">5</option>
-              <option value="2">6</option>
-
-        </form>
+        <div class="hotels-number">
+          <label>Гостиниц на странице:</label>
+          <select class="select-control-number">
+            <option value="4" selected>4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+          </select>
+        </div>
       </section>
       <section class="email-hotel">
+        <div class="subscribe-inner-wrapper">
         <h2 class="subtitle-email-hotel">Подпишитесь на рассылку</h2>
-          <p class="description-email-hotel">Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="description-email-hotel">Только полезная информация и никакого спама,<br>честное бойскаутское!
           </p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email" class="visually-hidden">Ваш email</label>
             <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">
-              </button>
+                <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
+        </div>
       </section>
   </main>
 
