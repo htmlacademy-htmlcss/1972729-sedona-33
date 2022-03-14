@@ -129,6 +129,14 @@ body {
   padding-bottom: 18px;
 }
 
+.navigation-link:hover {
+  background-color: rgba(117, 98, 87, 1);
+}
+
+.navigation-link:active {
+  background-color: rgba(117, 98, 87, 0.3);
+}
+
 .navigation-user-item:nth-child(2) {
   margin-right: 20px;
 }
@@ -159,6 +167,14 @@ body {
   left: 0;
   margin: auto;
   fill: #000000;
+}
+
+.navigation-link:hover .navigation-icon {
+  fill: rgba(117, 98, 87, 1);
+}
+
+.navigation-link:active .navigation-icon {
+  fill: rgba(117, 98, 87, 1);
 }
 
 .main-container {
