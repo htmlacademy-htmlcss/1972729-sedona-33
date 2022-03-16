@@ -1,0 +1,483 @@
+diff --git a/hotels.html b/hotels.html
+index 8570740..d4f4675 100644
+--- a/hotels.html
++++ b/hotels.html
+@@ -19,107 +19,129 @@
+             </li>
+             <li class="navigation-item">
+               <a class="navigation-link" href="about.html">О Седоне</a>
+-             </li>
+-             <li class="navigation-item">
++            </li>
++            <li class="navigation-item">
+               <a class="navigation-link" href="hotels.html">Гостиницы</a>
+-             </li>
+-           </ul>
+-           <ul class="navigation-user">
+-             <li class="navigation-user-item">
+-               <a class="navigation-link" href="#">
+-                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                  <path d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" fill="#000"/></svg>
+-                   <span class="visually-hidden">Поиск</span></a>
+-             </li>
+-             <li class="navigation-user-item">
+-               <a class="navigation-link" href="#">
+-                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                  <path d="M9.444 17c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9C.92 7.8.519 6.6.519 5.4c0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3C10.547.5 11.851 0 13.054 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.427 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.002 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
+-                   <span class="visually-hidden">Избранное</span></a>
+-             </li>
+-             <li class="navigation-user-item">
+-               <button class="navigation-button" type="button">Хочу сюда!
+-               </button>
+-              </li>
+-           </ul>
++            </li>
++          </ul>
++          <ul class="navigation-user">
++            <li class="navigation-user-item">
++              <a class="navigation-link" href="#">
++                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
++                  <path d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" fill="#000"/>
++                </svg>
++                <span class="visually-hidden">Поиск</span>
++              </a>
++            </li>
++            <li class="navigation-user-item">
++              <a class="navigation-link" href="#">
++                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
++                  <path d="M9.444 17c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9C.92 7.8.519 6.6.519 5.4c0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3C10.547.5 11.851 0 13.054 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.427 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.002 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
++                </svg>
++                <span class="visually-hidden">Избранное</span>
++              </a>
++            </li>
++            <li class="navigation-user-item">
++              <button class="navigation-button" type="button">Хочу сюда!</button>
++            </li>
++          </ul>
+         </nav>
+-     </header>
++      </header>
+ 
+-    <main class="main-container main-inner">
+-      <div class="hotels-search-container">
+-        <h1 class="hotels-search-title">Гостиницы Седоны</h1>
++      <main class="main-container main-inner">
++        <div class="hotels-search-container">
++          <h1 class="hotels-search-title">Гостиницы Седоны</h1>
+           <section class="hotels-search">
+             <h2 class="visually-hidden">Хлебные крошки</h2>
+-              <ul class="breadcrumbs">
+-                <li class="breadcrumbs-item">
+-                  <a class="breadcrumbs-link breadcrumbs-icon" href="index.html">
+-                    <img class="main-page" src="images/hotels-catalog/home-white.svg" alt="иконка">
+-                  </a>
+-                </li>
+-                <li class="breadcrumbs-item">
+-                  <a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">
+-                    <img class="main-page" src="images/hotels-catalog/arrow.svg" alt="стрелка">
+-                  </a>
+-                </li>
+-                <li class="breadcrumbs-item">
+-                  <a class="breadcrumbs-link">Гостиницы</a>
+-                </li>
+-              </ul>
++            <ul class="breadcrumbs">
++              <li class="breadcrumbs-item">
++                <a class="breadcrumbs-link breadcrumbs-icon" href="index.html">
++                  <img class="main-page" src="images/hotels-catalog/home-white.svg" alt="иконка">
++                </a>
++              </li>
++              <li class="breadcrumbs-item">
++                <a class="breadcrumbs-link breadcrumbs-arrow" href="index.html">
++                  <img class="main-page" src="images/hotels-catalog/arrow.svg" alt="стрелка">
++                </a>
++              </li>
++              <li class="breadcrumbs-item">
++                <a class="breadcrumbs-link">Гостиницы</a>
++              </li>
++            </ul>
+           </section>
+           <section class="catalog-filter">
+             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+               <h2 class="visually-hidden">Параметры поиска</h2>
+-                <fieldset class="catalog-filter-group group-filter-first">
++                <fieldset class="catalog-filter-group group-filter-group--infrastructure">
+                   <legend class="catalog-filter-title">Инфраструктура:</legend>
+                     <ul class="catalog-filter-list">
+                       <li class="catalog-filter-item">
+                         <label class="control">
+                           <input class="control-input" type="checkbox" name="swimming-pool" checked>
++                          <span class="control-mark control-mark--checkbox"></span>
+                           Бассейн
+                         </label>
+                       </li>
+                       <li class="catalog-filter-item">
+                         <label class="control">
+                           <input class="control-input" type="checkbox" name="parking" checked>
++                          <span class="control-mark control-mark--checkbox"></span>
+                            Парковка
+                         </label>
+                       </li>
+                       <li class="catalog-filter-item">
+                         <label class="control">
+                           <input class="control-input" type="checkbox" name="wi-fi">
++                          <span class="control-mark control-mark--checkbox"></span>
+                           Wi-Fi
+                         </label>
+                       </li>
+                     </ul>
+                 </fieldset>
+ 
+-                <fieldset class="catalog-filter-group">
++                <fieldset class="catalog-filter-group catalog-filter-group--type">
+                   <legend class="catalog-filter-title">Тип жилья:</legend>
+                     <ul class="catalog-filter-list">
+                       <li class="catalog-filter-item">
+-                        <label class="control">
+-                          <input class="control-input" type="radio" name="hotel" checked>
++                        <label class="control control--checkbox">
++                          <input class="control-input" type="radio" name="type" checked>
++                          <span class="control-mark control-mark--radio"></span>
+                           Гостиница
+                         </label>
+                       </li>
+                       <li class="catalog-filter-item">
+                         <label class="control">
+-                          <input class="control-input" type="radio" name="motel">
+-                         Мотель
++                          <input class="control-input" type="radio" name="type">
++                          <span class="control-mark control-mark--radio"></span>
++                          Мотель
+                         </label>
+                       </li>
+                       <li class="catalog-filter-item">
+                         <label class="control">
+-                          <input class="control-input" type="radio" name="apartments">
++                          <input class="control-input" type="radio" name="type">
++                          <span class="control-mark control-mark--radio"></span>
+                           Апартаменты
+                         </label>
+                       </li>
+                     </ul>
+                 </fieldset>
+-                <fieldset class="catalog-filter-group">
++                <fieldset class="catalog-filter-group catalog-filter-group--cost">
+                   <legend class="catalog-filter-title">Стоимость, ₽</legend>
+-                  <input class="price-input" type="number" name="from" value="0" placeholder="от">
+-                  <input class="price-input" type="number" name="to" value="9000" placeholder="до">
++                  <div class="price-container">
++                    <label class="price-field">
++                      <input class="price-input price-input--from" type="number" name="from" value="0">
++                      <span class="price-field__placeholder">от</span>
++                    </label>
++                    <label class="price-field">
++                      <input class="price-input price-input--to" type="number" name="to" value="9000">
++                      <span class="price-field__placeholder">до</span>
++                    </label>
++                  </div>
++                  <div class="slider">
++                    <div class="slider-inner"></div>
++                    <button class="slider-button slider-button--min"></button>
++                    <button class="slider-button slider-button--max"></button>
++                  </div>
+                 </fieldset>
+                 <div class="button-catalog-group">
+                   <button class="button-submit" type="submit">Применить</button>
+@@ -127,8 +149,8 @@
+                 </div>
+             </form>
+           </section>
+-      </div>
+-      <section class="select-control">
++        </div>
++        <section class="select-control">
+         <p class="select-control-title">Найдено гостиниц: 38
+         </p>
+           <select class="select-control-list" aria-label="Сортировка">
+diff --git a/styles/styles.css b/styles/styles.css
+index 1f0e6f6..c23efff 100644
+--- a/styles/styles.css
++++ b/styles/styles.css
+@@ -643,23 +643,19 @@ a[href^="tel:"] {
+ .hotels-search-container {
+   display: flex;
+   flex-direction: column;
+-  width: 1200px;
+-  height: 408px;
+-  padding-left: 72px;
+-  padding-right: 72px;
+-  padding-top: 30px;
+-  padding-bottom: 40px;
++  min-height: 408px;
++  padding: 0 72px;
+   color: #ffffff ;
+   background-image: url("../images/catalog-background.jpg");
+-    background-size: 100% auto;
+-    background-repeat: no-repeat;
++  background-size: 100% auto;
++  background-repeat: no-repeat;
+ }
+ 
+ .hotels-search-title {
+-  margin-bottom: 0px;
+-  margin-right: 601px;
+-  font-weight: 700, bold;
+-  line-height: 78px;
++  margin: 0;
++  margin-top: 36px;
++  font-weight: 700;
++  line-height: 70px;
+   font-size: 60px;
+   color: #FFFFFF;
+ }
+@@ -689,11 +685,13 @@ a[href^="tel:"] {
+ }
+ 
+ /*filter*/
++.catalog-filter {
++  margin-top: 45px;
++}
+ 
+ .catalog-filter-form {
+   display: flex;
+   margin: 0;
+-  padding: 0 72px 0 71px;
+ }
+ 
+ .catalog-filter-group {
+@@ -702,82 +700,161 @@ a[href^="tel:"] {
+   padding: 0;
+ }
+ 
+-.catalog-filter-group:nth-child(1) {
+- margin-right: 68px;
++.group-filter-group--infrastructure {
++  margin-right: 68px;
+ }
+ 
+-.catalog-filter-group:nth-child(2) {
+-  margin-right: 65px;
++.catalog-filter-group--type {
++  margin-right: 168px;
+ }
+ 
+-.catalog-filter-group:nth-child(3) {
+-  min-width: 287px;
++.catalog-filter-group--cost {
++  width: 288px
+ }
+ 
+-.group-filter-first {
+-  margin-left: -70px;
++.catalog-filter-group--cost legend {
+ }
+ 
+ .catalog-filter-list {
+   padding: 0;
+   margin: 0;
++  margin-top: 30px;
++  display: grid;
++  gap: 13px;
+ }
+ 
+ .catalog-filter-item {
+-  padding: 0 15px 13px;
+   font-size: 18px;
+   line-height: 23px;
+   list-style-type: none;
+ }
+ 
+ .catalog-filter-title {
+-  font-family: "PN Sans", sans-serif;
+   font-size: 20px;
+-  line-height: auto;
++  line-height: 26px;
+   font-weight: bold;
+   color: #FFFFFF;
+   padding: 0;
+-  padding-top: 45px;
+-  padding-bottom: 34px;
+-}
+-
+-.catalog-filter-group:nth-child(3) .catalog-filter-title {
+-  padding-bottom: 38px;
++  /* padding-bottom: 34px; */
+ }
+ 
+ .control {
+-  font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 23px;
+   font-weight: 400;
++  display: flex;
+ }
+ 
+-.price-input {
+-  max-width: 119px;
+-  height: 42px;
+-  border: 2px solid #ffffff;
+-  border-radius: 4px 0 0 4px;
+-  background: transparent;
+-  color: #ffffff;
+-  padding-left: 17px;
+-  font-family: "PT Sans", sans-serif;
++
++.price-container {
++  display: flex;
++  margin-top: 34px;
++}
++.price-field {
++  display: flex;
++  align-items: center;
+   font-size: 18px;
+-  line-height: 23px;
++  line-height: 24px;
+   font-weight: 400;
++  position: relative;
++}
++.price-field:nth-of-type(2) {
++  margin-left: -2px;
++}
++.price-field__placeholder {
++  position: absolute;
++  opacity: .3;
++  right: 14px;
+ }
+ 
+-.price-input:last-child {
++.price-input {
++  height: 48px;
++  width: 144px;
++  box-sizing: border-box;
++  padding: 0;
++  padding-left: 17px;
++  appearance: textfield;
++  background: transparent;
++  color: #ffffff;
++  font: inherit;
++  border: 2px solid #ffffff;
++  outline: 0;
++}
++.price-input:hover {
++  border-color: rgba(255, 255, 255, 0.6);
++}
++.price-input:focus {
++  box-shadow: 0px 0px 0px 3px #81B3D2, inset 0px 0px 0px 3px #81B3D2;
++  border-color: #FFFFFF;
++}
++.price-input:active {
++  border-color: #FFFFFF;
++  background-color: #756257;
++}
++.price-input--from {
++  border-radius: 4px 0 0 4px;
++}
++.price-input--to {
+   border-radius: 0 4px 4px 0;
+-  margin-left: -5px;
+ }
++.price-input::-webkit-outer-spin-button,
++.price-input::-webkit-inner-spin-button {
++  appearance: none;
++  margin: 0;
++}
++
++.range-scale {
++  position: relative;
++  height: 4px;
++  background-color: rgb(255, 255, 255, 0.3);
++  border-radius: 2px;
++  width: 287px;
++  top: 25px;
++}
++
++.slider {
++  margin-top: 28px;
++  height: 4px;
++  width: 287px;
++  background-color: rgb(255, 255, 255, 0.3);
++  position: relative;
++}
++.slider-inner {
++  background-color: #FFFFFF;
++  position: absolute;
++  top: 0;
++  bottom: 0;
++  left: 0;
++  right: 51px;
++}
++.slider-button {
++  position: absolute;
++  top: -8px;
++  width: 20px;
++  height: 20px;
++  background: #ffffff;
++  border: 2px solid #ffffff;
++  border-radius: 5px;
++  cursor: pointer;
++}
++.slider-button:focus {
++  outline: 3px solid #83B3D3;
++}
++.slider-button:active {
++  outline: 2px solid #83B3D3;
++}
++.slider-button--max {
++  right: 51px;
++}
++
++
+ 
+ .button-catalog-group {
+   display: flex;
+   flex-direction: column;
+-  align-items: flex-end;
+   margin-left: auto;
+   padding: 0;
+-  padding-top: 59px;
++  margin-top: 22px;
+ }
+ 
+ .button-submit {
+@@ -847,6 +924,41 @@ a[href^="tel:"] {
+   font-weight: normal;
+   color: #FFFFFF;
+   background-color: #83B3D3;
++  position: absolute;
++  appearance: none;
++}
++
++.control-input:checked + .control-mark--checkbox {
++  background-image: url('../images/tick.svg');
++}
++
++.control-input:checked + .control-mark--radio::before {
++  content: "";
++  display: block;
++  width: 10px;
++  height: 10px;
++  border-radius: 5px;
++  background-color: #3F5E72;
++}
++
++.control-mark {
++  display: flex;
++  margin-right: 19px;
++  align-items: center;
++  justify-content: center;
++  width: 20px;
++  height: 20px;
++  background-color: #FFFFFF;
++  background-position: center;
++  background-repeat: no-repeat;
++}
++
++.control-mark--checkbox {
++  border-radius: 4px;
++}
++
++.control-mark--radio {
++  border-radius: 10px;
+ }
+ 
+ .select-control {
