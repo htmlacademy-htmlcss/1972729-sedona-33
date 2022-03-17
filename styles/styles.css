@@ -138,6 +138,11 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
+.navigation-link:visited {
+  color: #000000;
+  border-bottom: 2px solid #756257;
+}
+
 .navigation-user-item:nth-child(2) {
   margin-right: 20px;
 }
@@ -160,6 +165,22 @@ body {
   cursor: pointer;
 }
 
+.navigation-button:hover {
+  background-color: #615048;
+  color: #FFFFFF;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+  color: #FFFFFF;
+  border: 3px solid #83B3D3;
+}
+
+.navigation-button:active {
+  background-color: #615048;;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -170,12 +191,13 @@ body {
   fill: #000000;
 }
 
-.navigation-icon:hover {
-  color: rgba(117, 98, 87, 1);
+.navigation-link:hover .navigation-icon {
+ color: #756257;;
 }
 
-.navigation-link .navigation-icon:active {
-  color: rgba(117, 98, 87, 1);
+.navigation-link:active .navigation-icon {
+  color: #756257;
+  opacity: 0.3;
 }
 
 .main-container {
@@ -525,6 +547,23 @@ body {
   cursor: pointer;
 }
 
+.button-search:hover {
+  background-color: #615048;
+  color: #FFFFFF;
+  }
+
+  .button-search:focus {
+  background-color: #615048;
+  color: #FFFFFF;
+  border: 3px solid #83B3D3;
+  }
+
+  .button-search:active {
+  background-color: #615048;;
+  color: rgba(255, 255, 255, 0.3);
+  }
+
+
 .email {
   display: flex;
   flex-direction: column;
@@ -568,80 +607,7 @@ body {
   background-color: #83B3D3;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
 
-.footer-social-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  margin-right: 61px;
-  margin-left: 72px;
-  list-style-type: none;
-}
-
-.footer-social-item {
-  width: 21px;
-  height: 30px;
-  margin-right: 23px;
-}
-
-.footer-social-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.footer-social-link {
-  display: block;
-  height: 120px;
-  background-color:#ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.footer-social-twitter {
-  background-image: url("../images/footer/social-twitter.svg");
-}
-
-.footer-social-facebook {
-  background-image: url("../images/footer/fb.svg")
-}
-
-.footer-social-youtube {
-  background-image: url("../images/footer/social-youtube.svg")
-}
-
-.phone-number {
-  display: block;
-  width: 720px;
-  height: 50px;
-  margin: 40px 62px 30px 61px;
-  line-height: 40px;
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
-a[href^="tel:"] {
-  font-size: 40px;
-  line-height: 40px;
-  text-decoration: none;
-  color: #000000;
-}
-
-.button .footer-logo {
-  display: block;
-  width: 115px;
-  height: 34px;
-  margin: 42px 72px 44px 53px;
-  max-width: 115px;
-  margin-left: 53px;
-  background-color: #FFFFFF;
-}
 
 .hotels-search-container {
   display: flex;
@@ -750,6 +716,7 @@ a[href^="tel:"] {
   display: flex;
   margin-top: 34px;
 }
+
 .price-field {
   display: flex;
   align-items: center;
@@ -846,8 +813,6 @@ a[href^="tel:"] {
 .slider-button--max {
   right: 51px;
 }
-
-
 
 .button-catalog-group {
   display: flex;
@@ -1229,20 +1194,36 @@ a[href^="tel:"] {
   margin: 0 auto;
   }
 
-  .field {
-    padding: 0;
-    padding-left: 22px;
-    width: 580px;
-    height: 60px;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: left;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 10px 0 0 10px;
-    }
+.field {
+  padding: 0;
+  padding-left: 22px;
+  width: 580px;
+  height: 60px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px 0 0 10px;
+   }
+
+.field:hover {
+  background-color: rgba(230, 230, 230, 1);
+  color: rgba(0, 0, 0, 1);
+  }
+
+.field:focus {
+  background-color: rgba(230, 230, 230, 1);
+  color: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(131, 179, 211, 1);
+  }
+
+  .field:not(:placeholder-shown):invalid {
+    background-color: #ffffff;
+    outline: 2px solid #ff5757;
+  }
 
   .subscribe-button {
     width: 200px;
@@ -1261,6 +1242,123 @@ a[href^="tel:"] {
     border-radius: 0 10px 10px 0;
     cursor: pointer;
     }
+
+    .subscribe-button:hover {
+      background: #68A2CA;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .subscribe-button:focus {
+      background-color: #68A2CA;
+      color: #FFFFFF;
+      border: 3px solid #756257;
+      }
+
+      .subscribe-button:active {
+        background-color: #68A2CA;
+        color: rgba(255, 255, 255, 0.3);
+        }
+/*footer*/
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 61px;
+  margin-left: 72px;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 21px;
+  height: 30px;
+  margin-right: 23px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-social-link {
+  display: block;
+  height: 120px;
+  background-color:#ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-twitter {
+  background-image: url("../images/footer/social-twitter.svg");
+}
+
+.footer-social-facebook {
+  background-image: url("../images/footer/fb.svg")
+}
+
+.footer-social-youtube {
+  background-image: url("../images/footer/social-youtube.svg")
+}
+
+.footer-social-item:hover .footer-social-link:hover {
+  background-color: #68A2CA;
+}
+
+.footer-social-item:active .footer-social-link:active {
+  background-image: rgb(200, 218, 230);
+}
+
+.phone-number {
+  display: block;
+  width: 720px;
+  height: 50px;
+  margin: 40px 62px 30px 61px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+a[href^="tel:"] {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.phone-number:hover a {
+  color: #756257;
+}
+
+.phone-number:focus a {
+  color: #756257;
+  border: 3px solid #68A2CA;
+}
+
+.phone-number:active a {
+  color: rgba(117, 98, 87, 1);
+}
+
+.button .footer-logo {
+  display: block;
+  width: 115px;
+  height: 34px;
+  margin: 42px 72px 44px 53px;
+  max-width: 115px;
+  margin-left: 53px;
+  background-color: #FFFFFF;
+}
+
+.button:hover .footer-logo  {
+  color: rgba(117, 98, 87, 1);
+}
 
 
 
