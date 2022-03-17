@@ -131,11 +131,11 @@ body {
 }
 
 .navigation-link:hover {
-  background-color: rgba(117, 98, 87, 1);
+  color: rgba(117, 98, 87, 1);
 }
 
 .navigation-link:active {
-  background-color: rgba(117, 98, 87, 0.3);
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-user-item:nth-child(2) {
@@ -170,24 +170,26 @@ body {
   fill: #000000;
 }
 
-.navigation-link:hover .navigation-icon {
-  fill: rgba(117, 98, 87, 1);
+.navigation-icon:hover {
+  color: rgba(117, 98, 87, 1);
 }
 
-.navigation-link:active .navigation-icon {
-  fill: rgba(117, 98, 87, 1);
+.navigation-link .navigation-icon:active {
+  color: rgba(117, 98, 87, 1);
 }
 
 .main-container {
   flex-grow: 1;
 }
 
-.main-index {
-  background-color: #ffffff;
-  color: #000000;
-  background-image: url("../images/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.promo {
+  width: 100%;
+  min-height: 485px;
+  margin-bottom: 65px;
+  text-align: center;
+  background-color: #928680;
+  background: url("../images/divider.svg") bottom no-repeat,
+  url("../images/index-background.jpg") center no-repeat;
 }
 
 .logo {
