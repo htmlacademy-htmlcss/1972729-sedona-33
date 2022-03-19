@@ -1749,7 +1749,7 @@ a[href^="tel:"] {
   color: rgba(117, 98, 87, 1);
 }
 
-.button .footer-logo {
+.a .footer-logo-icon{
   display: block;
   width: 115px;
   height: 34px;
@@ -1759,7 +1759,7 @@ a[href^="tel:"] {
   background-color: #FFFFFF;
 }
 
-.button:hover .footer-logo  {
+.footer-logo:hover .footer-logo-icon {
   color: rgba(117, 98, 87, 1);
 }
 
