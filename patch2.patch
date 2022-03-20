@@ -1,0 +1,954 @@
+diff --git a/hotels.html b/hotels.html
+index d4f4675..a374c16 100644
+--- a/hotels.html
++++ b/hotels.html
+@@ -2,8 +2,8 @@
+ <html lang="ru">
+   <head>
+     <meta charset="utf-8">
+-      <title>HTML Academy: Седона</title>
+-      <link rel="stylesheet" href="styles/styles.css">
++    <title>HTML Academy: Седона</title>
++    <link rel="stylesheet" href="styles/styles.css">
+   </head>
+ 
+   <body>
+@@ -150,185 +150,207 @@
+             </form>
+           </section>
+         </div>
+-        <section class="select-control">
+-        <p class="select-control-title">Найдено гостиниц: 38
+-        </p>
+-          <select class="select-control-list" aria-label="Сортировка">
+-            <option value="cheap">Сначала дешёвые</option>
+-            <option value="popular">Сначала популярные</option>
+-            <option value="expensive">Сначала дорогие</option>
+-          </select>
+-          <div class="sort-button-wrapper">
+-            <a class="sort-button-icons" href="#">
+-              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
+-              <span class="visually-hidden">Показать карточки</span>
+-            </a>
+-            <a class="sort-button-icons" href="#">
+-              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
+-              <span class="visually-hidden">На весь экран</span>
+-            </a>
+-            <a class="sort-button-icons" href="#">
+-              <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
+-              <span class="visually-hidden">Показать список</span>
+-            </a>
++        <section class="select-control hotels">
++          <h2 class="visually-hidden">Найденые гостиницы</h2>
++          <div class="hotels__sort">
++            <p class="select-control-title">Найдено гостиниц: 38</p>
++            <select class="select-control-list" aria-label="Сортировка">
++              <option value="cheap">Сначала дешёвые</option>
++              <option value="popular">Сначала популярные</option>
++              <option value="expensive">Сначала дорогие</option>
++            </select>
++            <ul class="show-list">
++              <li class="show-list__item">
++                <a class="sort-button-icons" href="#">
++                  <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
++                    <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
++                  </svg>
++                  <span class="visually-hidden">Показать карточки</span>
++                </a>
++              </li>
++              <li class="show-list__item">
++                <a class="sort-button-icons" href="#">
++                  <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
++                    <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
++                  </svg>
++                  <span class="visually-hidden">На весь экран</span>
++                </a>
++              </li>
++              <li class="show-list__item">
++                <a class="sort-button-icons" href="#">
++                  <svg role="img" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
++                    <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
++                  </svg>
++                  <span class="visually-hidden">Показать список</span>
++                </a>
++              </li>
++            </ul>
+           </div>
+-      </section>
+-      <section>
+-        <ul class="hotels-list">
+-          <li class="hotels-card">
+-            <a class="hotels-card-link" href="hotels.html">
+-              <img class="hotels-card-image" src="images/hotels-catalog/hotel-1.jpg" alt="Amara Resort & Spa" width="299" height="206">
+-                <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+-            </a>
+-            <div class="text-card">
+-              <span class="hotels-card-type">Гостиница</span>
+-              <span class="hotels-card-price">От 4000 ₽</span>
+-            </div>
+-            <div class="button-card">
+-                <a class="hotels-card-more button" href="#">Подробнее</a>
+-                <a class="hotels-card-favorites button" href="#">В Избранное</a>
+-            </div>
+-                  <div class="button-rating">Рейтинг: 8,5</div>
+-                    <div class="stars-number-amara">
+-                      <span class="visually-hidden">количество звёзд</span>
+-                    </div>
+-          </li>
+ 
+-          <li class="hotels-card">
+-            <a class="hotels-card-link" href="hotels.html">
+-              <img class="hotels-card-image" src="images/hotels-catalog/hotel-2.jpg" alt="Desert Quail Inn" width="299" height="206">
++          <ul class="hotels-list">
++            <li class="hotels-card">
++              <a class="hotels-card-link" href="hotels.html">
++                <img class="hotels-card-image" src="images/hotels-catalog/hotel-1.jpg" alt="Amara Resort & Spa" width="299" height="220">
++                <h3 class="hotels-card-title">Amara Resort & Spa</h3>
++              </a>
++              <div class="hotels-card__text">
++                <span>Гостиница</span>
++                <span>От 4000 ₽</span>
++              </div>
++              <div class="hotels-card__buttons">
++                <a class="button button__more" href="#">Подробнее</a>
++                <a class="button button__favorites" href="#">В Избранное</a>
++              </div>
++              <div class="hotels-card__rating">
++                <ul class="star-list">
++                  <li></li>
++                  <li></li>
++                  <li></li>
++                  <li></li>
++                </ul>
++                <span class="rating">Рейтинг: 8,5</span>
++              </div>
++              <div class="stars-number-amara">
++                <span class="visually-hidden">количество звёзд</span>
++              </div>
++            </li>
++            <li class="hotels-card">
++              <a class="hotels-card-link" href="hotels.html">
++                <img class="hotels-card-image" src="images/hotels-catalog/hotel-2.jpg" alt="Desert Quail Inn" width="299" height="220">
+                 <h3 class="hotels-card-title">Desert Quail Inn</h3>
+-            </a>
+-            <div class="text-card">
+-              <span class="hotels-card-type">Гостиница</span>
+-                <span class="hotels-card-price">От 3000 ₽</span>
+-            </div>
+-            <div class="button-card">
+-                  <a class="hotels-card-more button" href="#">Подробнее</a>
+-                  <a class="hotels-card-favorites button" href="#">В Избранное</a>
+-            </div>
+-                    <div class="button-rating">Рейтинг: 8,9</div>
+-                      <div class="stars-number-desert">
+-                        <span class= "visually-hidden">количество звёзд</span>
+-                    </div>
+-          </li>
+-
+-          <li class="hotels-card">
+-            <a class="hotels-card-link" href="hotels.html">
+-              <img class="hotels-card-image" src="images/hotels-catalog/hotel-3.jpg" alt="Villas at Poco Diablo" width="299" height="206">
++              </a>
++              <div class="hotels-card__text">
++                <span>Гостиница</span>
++                <span>От 3000 ₽</span>
++              </div>
++              <div class="hotels-card__buttons">
++                <a class="button button__more" href="#">Подробнее</a>
++                <a class="button button__favorites" href="#">В Избранное</a>
++              </div>
++              <div class="hotels-card__rating">
++                <ul class="star-list">
++                  <li></li>
++                  <li></li>
++                  <li></li>
++                </ul>
++                <span class="rating">Рейтинг: 8,9</span>
++              </div>
++            </li>
++            <li class="hotels-card">
++              <a class="hotels-card-link" href="hotels.html">
++                <img class="hotels-card-image" src="images/hotels-catalog/hotel-3.jpg" alt="Villas at Poco Diablo" width="299" height="220">
+                 <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+-            </a>
+-            <div class="text-card">
+-              <span class="hotels-card-type">Гостиница</span>
+-                <span class="hotels-card-price">От 2000 ₽</span>
+-            </div>
+-            <div class="button-card">
+-                  <a class="hotels-card-more button" href="#">Подробнее</a>
+-                    <a class="hotels-card-favorites button" href="#">В Избранном</a>
+-            </div>
+-                      <div class="button-rating">Рейтинг: 9,2</div>
+-                        <div class="stars-number-villas">
+-                          <span class="visually-hidden">количество звёзд</span>
+-                        </div>
+-          </li>
+-
+-          <li class="hotels-card">
+-            <a class="hotels-card-link" href="hotels.html">
+-              <img class="hotels-card-image" src="images/hotels-catalog/hotel-4.jpg" alt="GreenTree Inn" width="299" height="206">
++              </a>
++              <div class="hotels-card__text">
++                <span>Гостиница</span>
++                <span>От 2000 ₽</span>
++              </div>
++              <div class="hotels-card__buttons">
++                <a class="button button__more" href="#">Подробнее</a>
++                <a class="button button__favorites" href="#">В Избранное</a>
++              </div>
++              <div class="hotels-card__rating">
++                <ul class="star-list">
++                  <li></li>
++                  <li></li>
++                </ul>
++                <span class="rating">Рейтинг: 9,2</span>
++              </div>
++            </li>
++            <li class="hotels-card">
++              <a class="hotels-card-link" href="hotels.html">
++                <img class="hotels-card-image" src="images/hotels-catalog/hotel-4.jpg" alt="GreenTree Inn" width="299" height="220">
+                 <h3 class="hotels-card-title">GreenTree Inn</h3>
+-            </a>
+-            <div class="text-card">
+-              <span class="hotels-card-type">Гостиница</span>
+-                <span class="hotels-card-price">От 3000 ₽</span>
++              </a>
++              <div class="hotels-card__text">
++                <span>Гостиница</span>
++                <span>От 3000 ₽</span>
+               </div>
+-              <div class="button-card">
+-                  <a class="hotels-card-more button" href="#">Подробнее</a>
+-                    <a class="hotels-card-favorites button" href="#">В Избранное</a>
++              <div class="hotels-card__buttons">
++                <a class="button button__more" href="#">Подробнее</a>
++                <a class="button button__favorites" href="#">В Избранное</a>
+               </div>
+-                      <div class="button-rating">Рейтинг: 9,2</div>
+-                        <div class="stars-number-greentree">
+-                           <span class="visually-hidden">количество звёзд</span>
+-                        </div>
+-          </li>
+-        </ul>
++              <div class="hotels-card__rating">
++                <ul class="star-list">
++                  <li></li>
++                  <li></li>
++                </ul>
++                <span class="rating">Рейтинг: 9,2</span>
++              </div>
++            </li>
++          </ul>
+           <div class="show-more-wrapper">
+             <button class="download-more-button" type= "button">Загрузить ещё</button>
+           </div>
+-      </section>
+-      <section class="pagination-wrapper">
+-        <ul class="pagination-list">
+-          <li class="pagination-item">
+-            <a class="pagination-link pagination-link-current">1</a>
+-          </li>
+-          <li class="pagination-item">
+-            <a class="pagination-link" href="#">2</a>
+-          </li>
+-          <li class="pagination-item">
+-            <a class="pagination-link" href="#">3</a>
+-          </li>
+-          <li class="pagination-item">
+-            <a class="pagination-link" href="#">4</a>
++
++          <div class="pagination-wrapper">
++            <ul class="pagination-list">
++              <li class="pagination-item">
++                <a class="pagination-link pagination-link-current">1</a>
++              </li>
++              <li class="pagination-item">
++                <a class="pagination-link" href="#">2</a>
++              </li>
++              <li class="pagination-item">
++                <a class="pagination-link" href="#">3</a>
++              </li>
++              <li class="pagination-item">
++                <a class="pagination-link" href="#">4</a>
++              </li>
++              <li class="pagination-item">
++                <a class="pagination-link pagination-next" href="#">
++                  <span class="visually-hidden">Следующая страница</span>
++                </a>
++              </li>
++              <li class="pagination-item">
++                <a class="pagination-link" href="#">10</a>
++              </li>
++            </ul>
++            <div class="hotels-number">
++              <label>Гостиниц на странице:</label>
++              <select class="select-control-number">
++                <option value="4" selected>4</option>
++                <option value="6">6</option>
++                <option value="8">8</option>
++              </select>
++            </div>
++          </div>
++        </section>
++
++        <section class="email-hotel">
++          <h2 class="subtitle-email-hotel">Подпишитесь на рассылку</h2>
++          <p class="description-email-hotel">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
++          <form class="newsletter-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
++            <label for="newsletter-email" class="visually-hidden">Ваш email</label>
++            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
++            <button class="subscribe-button" type="submit">Подписаться</button>
++          </form>
++        </section>
++      </main>
++
++      <footer class="page-footer">
++        <ul class="footer-social-list">
++          <li class="footer-social-item">
++            <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
++              <span class="visually-hidden">Твиттер</span>
++            </a>
+           </li>
+-          <li class="pagination-item">
+-            <a class="pagination-link pagination-next" href="#">
+-              <span class="visually-hidden">Следующая страница</span>
++          <li class="footer-social-item">
++            <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
++              <span class="visually-hidden">Фейсбук</span>
+             </a>
+           </li>
+-          <li class="pagination-item">
+-            <a class="pagination-link" href="#">10</a>
++          <li class="footer-social-item">
++            <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
++              <span class="visually-hidden">Ютуб</span>
++            </a>
+           </li>
+         </ul>
+-        <div class="hotels-number">
+-          <label>Гостиниц на странице:</label>
+-          <select class="select-control-number">
+-            <option value="4" selected>4</option>
+-            <option value="6">6</option>
+-            <option value="8">8</option>
+-          </select>
+-        </div>
+-      </section>
+-      <section class="email-hotel">
+-        <div class="subscribe-inner-wrapper">
+-        <h2 class="subtitle-email-hotel">Подпишитесь на рассылку</h2>
+-          <p class="description-email-hotel">Только полезная информация и никакого спама,<br>честное бойскаутское!
+-          </p>
+-        <form class="newsletter-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+-          <label for="newsletter-email" class="visually-hidden">Ваш email</label>
+-            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+-                <button class="button subscribe-button" type="submit">Подписаться</button>
+-        </form>
+-        </div>
+-      </section>
+-  </main>
+-
+-  <footer class="page-footer">
+-    <div class="page-footer-container">
+-      <ul class="footer-social-list">
+-        <li class="footer-social-item">
+-          <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
+-            <span class="visually-hidden">Твиттер</span>
+-          </a>
+-        </li>
+-        <li class="footer-social-item">
+-          <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
+-            <span class="visually-hidden">Фейсбук</span>
+-          </a>
+-        </li>
+-        <li class="footer-social-item">
+-          <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+-            <span class="visually-hidden">Ютуб</span>
+-          </a>
+-        </li>
+-      </ul>
+-      <div class="phone-number"><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
+-        <a class="button footer-logo" href="https://htmlacademy.ru/">
++        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
++        <a class="footer-logo" href="https://htmlacademy.ru/">
+           <img class="footer-logo" src="images/footer/html-logo.svg" alt="Логотип Html Academy" width="115" height="34">
+         </a>
++      </footer>
+     </div>
+-  </footer>
+-</div>
+-</body>
++  </body>
+ </html>
+diff --git a/index.html b/index.html
+index c0d2715..60c40c4 100644
+--- a/index.html
++++ b/index.html
+@@ -125,33 +125,29 @@
+   </section>
+ </main>
+ 
+-<footer class="page-footer">
+-  <div class="page-footer-container">
+-  <ul class="footer-social-list">
+-    <li class="footer-social-item">
+-      <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
+-        <span class="visually-hidden">Твиттер</span>
+-          </a>
+-    </li>
+-    <li class="footer-social-item">
+-      <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
+-        <span class="visually-hidden">Фейсбук</span>
+-          </a>
+-    </li>
+-    <li class="footer-social-item">
+-      <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+-        <span class="visually-hidden">Ютуб</span>
+-      </a>
+-    </li>
+-  </ul>
+-
+-      <div class="phone-number"><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
+-
+-    <a class="button footer-logo" href="https://htmlacademy.ru/">
++  <footer class="page-footer">
++    <ul class="footer-social-list">
++      <li class="footer-social-item">
++        <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
++          <span class="visually-hidden">Твиттер</span>
++        </a>
++      </li>
++      <li class="footer-social-item">
++        <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
++          <span class="visually-hidden">Фейсбук</span>
++        </a>
++      </li>
++      <li class="footer-social-item">
++        <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
++          <span class="visually-hidden">Ютуб</span>
++        </a>
++      </li>
++    </ul>
++    <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
++    <a class="footer-logo" href="https://htmlacademy.ru/">
+       <img class="footer-logo" src="images/footer/html-logo.svg" alt="Логотип Html Academy" width="115" height="34">
+     </a>
+-  </div>
+-</footer>
++  </footer>
+ </div>
+ 
+ <div class="modal-container modal-container-close">
+diff --git a/styles/styles.css b/styles/styles.css
+index b0c3dcd..502449c 100644
+--- a/styles/styles.css
++++ b/styles/styles.css
+@@ -33,7 +33,7 @@ body {
+   background-color:#ffffff;
+ }
+ 
+-.page-header, .page-footer-container {
++.page-header {
+   flex-shrink: 0;
+ }
+ 
+@@ -1261,28 +1261,29 @@ input[type='number'] {
+ 
+ .hotels-list {
+   display: grid;
+-  grid-template-columns: repeat(3, 340px);
++  grid-template-columns: repeat(3, 1fr);
+   list-style-type: none;
+   margin: 0;
++  margin-top: 34px;
+   padding: 0;
+-  margin-left: 72px;
+-  gap: 10px 18px;
++  gap: 10px;
+ }
+ 
+ .hotels-card {
+   display: flex;
+   flex-direction: column;
+-  width: 339px;
++  min-height: 438px;
+   padding: 20px;
+-  align-items: flex-start;
+-}
+-
+-.text-card {
+-  display: flex;
++  box-sizing: border-box;
+ }
+ 
+-.hotels-card-type {
+-  padding-right: 25px;
++.hotels-card__text {
++  margin-top: 4px;
++  display: grid;
++  grid-template-columns: 1fr 1fr;
++  font-size: 18px;
++  line-height: 23px;
++  font-style: normal;
+ }
+ 
+ 
+@@ -1329,12 +1330,21 @@ input[type='number'] {
+   border-radius: 10px;
+ }
+ 
+-.select-control {
++.hotels {
++
++}
++.hotels__sort {
+   display: flex;
+-  margin-bottom: 53px;
++}
++
++.select-control {
++  padding: 0 72px;
++  margin-top: 42px;
+ }
+ 
+ .select-control-title {
++  margin: 0;
++  margin-top: 8px;
+   font-family: "PT Sans";
+   font-weight: bold;
+   line-height: 39px;
+@@ -1342,33 +1352,42 @@ input[type='number'] {
+   text-transform: uppercase;
+   color: #000000;
+   background-color: #FFFFFF;
+-  margin-left: 72px;
+-  margin-right: 192px;
+ }
+ 
+ .select-control-list {
+-  margin-top: 38px;
+-  padding-right: 81px;
+-  padding-left: 19px;
++  margin-left: auto;
++  margin-right: 72px;
++  padding: 0 19px;
++  box-sizing: border-box;
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 23px;
+   font-style: normal;
+   color: #000000;
+   background-color: #FFFFFF;
++  min-width: 288px;
+ }
+ 
+ .sort-button-wrapper {
+   display: flex;
+-  margin-top: 40px;
+-  margin-left: 80px;
++}
++
++.show-list {
++  margin: 0;
++  padding: 0;
++  list-style: none;
++  display: flex;
++  justify-content: flex-end;
++}
++.show-list__item {
++  margin-left: 8px;
+ }
+ 
+ .sort-button-icons {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+-  margin: 0 0 0 8px;
++  align-items: center;
+   width: 44px;
+   height: 44px;
+   border: 2px solid #000000;
+@@ -1381,55 +1400,60 @@ input[type='number'] {
+ }
+ 
+ .hotels-card-title {
+-  font-weight: 700, bold;
++  font-weight: 700;
+   line-height: 31px;
+   font-size: 24px;
+   color: #000000;
+   background-color: #FFFFFF;
++  margin: 0;
++  margin-top: 10px;
+ }
+-.hotels-card-type {
+-  margin-right: 38px;
+-  margin-bottom: 16px;
+-  font-size: 18px;
+-  line-height: 23px;
+-  font-style: normal;
+-  color: #000000;
+-  background-color: #FFFFFF;
++
++.hotels-card__buttons {
++  margin-top: 16px;
++  display: flex;
++  justify-content: space-between;
+ }
+-.hotels-card-price {
+-  margin-bottom: 16px;
+-  font-size: 18px;
+-  line-height: 23px;
+-  font-style: normal;
+-  color: #000000;
+-  background-color: #FFFFFF;
++
++.hotels-card__rating {
++  margin-top: 16px;
++  min-height: 37px;
++  display: grid;
++  grid-template-columns: 1fr auto;
+ }
+ 
+-.button-card {
++.star-list {
++  margin: 0;
++  padding: 0;
++  list-style: none;
+   display: flex;
++  align-items: center;
++}
++.star-list li {
++  display: block;
++  width: 18px;
++  height: 17px;
++  margin-right: 7px;
++  background-image: url('../images/hotels-catalog/star.svg');
+ }
+ 
+-.hotels-card-more  {
+-  margin-right: 26px;
+-  margin-bottom: 16px;
+-  padding: 10px 21px;
+-  font-family: "PT Sans", sans-serif;
+-  font-weight: 700;
+-  line-height: 21px;
++.rating {
++  width: 160px;
+   font-size: 16px;
+-  text-align: center;
+-  text-decoration: none;
++  line-height: 21px;
++  display: flex;
++  align-items: center;
++  justify-content: center;
+   text-transform: uppercase;
+-  color: #FFFFFF;
+-  background-color: #756257;
+-  border: none;
+-  border-radius: 4px;
+-  cursor: pointer;
++  color: #333333;
++  background-color: #F2F2F2;
+ }
+ 
+-.hotels-card-favorites  {
+-  margin-bottom: 16px;
+-  padding: 10px 24px;
++.button {
++  min-height: 37px;
++  padding: 0 21px;
++  display: flex;
++  align-items: center;
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   line-height: 21px;
+@@ -1438,29 +1462,27 @@ input[type='number'] {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #FFFFFF;
+-  background-color: #83B3D3;
++  background-color: #756257;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+-.button-rating {
+-  font-size: 16px;
+-  line-height: 21px;
+-  text-align: center;
+-  text-transform: uppercase;
+-  color: #333333;
+-  background-color: #F2F2F2;
++
++.button__favorites {
++  background-color: #83B3D3;
++  padding: 0 24px;
++  margin-left: auto;
+ }
+ 
+ .show-more-wrapper {
+-  width: 1056px;
+-  min-height: 60px;
+-  margin: 0 auto;
+-  margin-bottom: 29px;
+-  padding: 28px 0 30px 0;
+-  text-align: center;
++  margin-top: 54px;
++  min-height: 120px;
++  box-sizing: border-box;
+   border-top: 1px solid #e5e5e5;
+   border-bottom: 1px solid #e5e5e5;
++  display: flex;
++  align-items: center;
++  justify-content: center;
+ }
+ 
+ .download-more-button {
+@@ -1490,7 +1512,7 @@ input[type='number'] {
+   width: 1056px;
+   min-height: 55px;
+   margin: 0 auto;
+-  margin-bottom: 74px;
++  margin-top: 30px;
+ }
+ 
+ .pagination-list {
+@@ -1543,30 +1565,29 @@ input[type='number'] {
+ }
+ 
+ .email-hotel {
++  margin-top: 88px;
+   display: flex;
+   flex-direction: column;
+-  height: 224px;
++  min-height: 364px;
+   text-align: center;
+   background-color: #ffffff;
+   color: #000000;
+ }
+ 
+ .subtitle-email-hotel {
+-  margin-bottom: 15px;
+-  margin-left: 142px;
+-  font-family: "PT Sans", sans-serif;
++  margin: 0;
+   font-weight: 700;
+   line-height: 36px;
+   font-size: 30px;
+   text-align: center;
+   text-transform: uppercase;
+-  color: #000000;
+-  background-color: #FFFFFF;
++  /* color: #000000;
++  background-color: #FFFFFF; */
+ }
+ 
+ .description-email-hotel {
+-  margin-left: 153px;
+-  font-family: "PT Sans", sans-serif;
++  margin: 0;
++  margin-top: 30px;
+   line-height: 26px;
+   font-size: 22px;
+   text-align: center;
+@@ -1588,19 +1609,20 @@ input[type='number'] {
+   min-height: 241px;
+   margin: 0 auto;
+   margin-bottom: 140px;
+-  }
++}
+ 
+ .subscribe-form {
+   width: 800px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+-  }
++  margin-top: 47px;
++}
+ 
+ .field {
++  flex-grow: 1;
+   padding: 0;
+   padding-left: 22px;
+-  width: 580px;
+   height: 60px;
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+@@ -1610,78 +1632,79 @@ input[type='number'] {
+   background-color: #f2f2f2;
+   border: none;
+   border-radius: 10px 0 0 10px;
+-   }
++  box-sizing: border-box;
++}
+ 
+ .field:hover {
+   background-color: rgba(230, 230, 230, 1);
+   color: rgba(0, 0, 0, 1);
+-  }
++}
+ 
+ .field:focus {
+   background-color: rgba(230, 230, 230, 1);
+   color: rgba(0, 0, 0, 1);
+   border: 2px solid rgba(131, 179, 211, 1);
+-  }
++}
+ 
+-  .field:not(:placeholder-shown):invalid {
+-    background-color: #ffffff;
+-    outline: 2px solid #ff5757;
+-  }
++.field:not(:placeholder-shown):invalid {
++  background-color: #ffffff;
++  outline: 2px solid #ff5757;
++}
+ 
+-  .subscribe-button {
+-    width: 200px;
+-    min-height: 60px;
+-    margin: 0;
+-    padding: 0;
+-    font-family: "PT Sans", sans-serif;
+-    font-size: 20px;
+-    line-height: 26px;
+-    font-weight: 700;
+-    text-align: center;
+-    text-transform: uppercase;
+-    color: #ffffff;
+-    background-color: #83b3d3;
+-    border: none;
+-    border-radius: 0 10px 10px 0;
+-    cursor: pointer;
+-    }
+-
+-    .subscribe-button:hover {
+-      background: #68A2CA;
+-      color: rgba(255, 255, 255, 1);
+-    }
+-
+-    .subscribe-button:focus {
+-      background-color: #68A2CA;
+-      color: #FFFFFF;
+-      border: 3px solid #756257;
+-      }
+-
+-      .subscribe-button:active {
+-        background-color: #68A2CA;
+-        color: rgba(255, 255, 255, 0.3);
+-        }
+-/*footer*/
++.subscribe-button {
++  width: 200px;
++  min-height: 60px;
++  margin: 0;
++  padding: 0;
++  font-family: "PT Sans", sans-serif;
++  font-size: 20px;
++  line-height: 26px;
++  font-weight: 700;
++  text-align: center;
++  text-transform: uppercase;
++  color: #ffffff;
++  background-color: #83b3d3;
++  border: none;
++  border-radius: 0 10px 10px 0;
++  cursor: pointer;
++  text-align: center;
++}
++
++.subscribe-button:hover {
++  background: #68A2CA;
++  color: rgba(255, 255, 255, 1);
++}
++
++.subscribe-button:focus {
++  background-color: #68A2CA;
++  color: #FFFFFF;
++  border: 3px solid #756257;
++}
+ 
+-.page-footer-container {
++.subscribe-button:active {
++  background-color: #68A2CA;
++  color: rgba(255, 255, 255, 0.3);
++}
++/*footer*/
++.page-footer {
++  min-height: 120px;
+   display: flex;
+-  width: 1200px;
+-  margin: 0 auto;
++  justify-content: space-between;
++  align-items: center;
++  padding: 0 72px;
+ }
+ 
+ .footer-social-list {
+   display: flex;
++  align-items: center;
+   margin: 0;
+   padding: 0;
+-  margin-right: 61px;
+-  margin-left: 72px;
++  margin-left: -10px;
+   list-style-type: none;
+ }
+ 
+ .footer-social-item {
+-  width: 21px;
+-  height: 30px;
+-  margin-right: 23px;
++  margin-right: 3px;
+ }
+ 
+ .footer-social-item:nth-child(3n) {
+@@ -1690,11 +1713,18 @@ input[type='number'] {
+ 
+ .footer-social-link {
+   display: block;
+-  height: 120px;
++  width: 40px;
++  height: 40px;
++  box-sizing: border-box;
+   background-color:#ffffff;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
++.footer-social-link:focus {
++  outline: none;
++  border: 3px solid #83B3D3;
++  border-radius: 10px;
++}
+ 
+ .footer-social-twitter {
+   background-image: url("../images/footer/social-twitter.svg");
+@@ -1708,22 +1738,13 @@ input[type='number'] {
+   background-image: url("../images/footer/social-youtube.svg")
+ }
+ 
+-.footer-social-item:hover .footer-social-link:hover {
+-  background-color: #68A2CA;
+-}
+-
+ .footer-social-item:active .footer-social-link:active {
+   background-image: rgb(200, 218, 230);
+ }
+ 
+ .phone-number {
+-  display: block;
+-  width: 720px;
+-  height: 50px;
+-  margin: 40px 62px 30px 61px;
+   line-height: 40px;
+   font-size: 40px;
+-  text-align: center;
+   text-transform: uppercase;
+   color: #000000;
+   background-color: #FFFFFF;
