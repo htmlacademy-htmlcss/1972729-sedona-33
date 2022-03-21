@@ -1461,20 +1461,14 @@ input[type='number'] {
 
 .select-control-list:hover {
   border: 2px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .select-control-list:focus {
   border: 2px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .select-control-list:active {
   border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
   color: rgba(51, 51, 51, 1);
 }
 
@@ -1516,19 +1510,16 @@ input[type='number'] {
 
 .sort-button-icons:hover {
   border: 2px solid #83B3D3;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
 .sort-button-icons:focus {
   border: 2px solid #83B3D3;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
 .sort-button-icons:active {
   border: 2px solid #000000;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -2001,17 +1992,16 @@ a[href^="tel:"] {
   background-color: #FFFFFF;
 }
 
-.footer-logo-icon:hover {
+.footer-logo-icon:hover path {
   fill: rgba(117, 98, 87, 1);
 }
 
-.footer-logo-icon:focus {
-  outline: none;
+.footer-logo-icon:focus path {
   fill: rgba(117, 98, 87, 1);
   border: 3px solid #68A2CA;
   border-radius: 10px;
 }
 
-.footer-logo-icon:active {
-  color: rgba(117, 98, 87, 1);
+.footer-logo-icon:active path {
+  fill: rgba(117, 98, 87, 1);
 }
