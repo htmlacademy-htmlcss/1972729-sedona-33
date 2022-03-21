@@ -360,7 +360,7 @@ body {
 .advantages-title {
   margin-top: 98px;
   margin-bottom: 30px;
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -372,7 +372,7 @@ body {
 .more-title {
   margin-top: 184px;
   margin-bottom: 20px;
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -397,7 +397,7 @@ body {
 .advantages-title-light-blue {
   margin-top: 98px;
   margin-bottom: 30px;
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -432,7 +432,7 @@ body {
 .more-title-food {
   margin-top: 184px;
   margin-bottom: 20px;
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -468,7 +468,7 @@ body {
 .more-title-light-blue {
   margin-top: 184px;
   margin-bottom: 20px;
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -486,7 +486,7 @@ body {
 }
 
 .advantages-title-road {
-  font-weight: 700, bold;
+  font-weight: 700;
   line-height: 28px;
   font-size: 24px;
   text-align: center;
@@ -1271,7 +1271,7 @@ input[type='number'] {
   border-radius: 4px;
 }
 
-.button-submit:activ {
+.button-submit:active {
   background-color: #68A2CA;
   color: #FFFFFF;
   opacity: 0.3;
