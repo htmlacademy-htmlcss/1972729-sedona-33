@@ -117,41 +117,37 @@
     <h2 class="subtitle-email">Подпишитесь на рассылку</h2>
       <p class="description-email">Только полезная информация и никакого спама,<br>честное бойскаутское!
       </p>
-    <form class="newsletter-form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email" class="visually-hidden">Ваш email</label>
-          <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button subscribe-button" type="submit">Подписаться</button>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label for="newsletter-email" class="visually-hidden">Ваш email</label>
+      <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+      <button class="subscribe-button" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
 
-<footer class="page-footer">
-  <div class="page-footer-container">
-  <ul class="footer-social-list">
-    <li class="footer-social-item">
-      <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
-        <span class="visually-hidden">Твиттер</span>
-          </a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
-        <span class="visually-hidden">Фейсбук</span>
-          </a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-        <span class="visually-hidden">Ютуб</span>
-      </a>
-    </li>
-  </ul>
-
-      <div class="phone-number"><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
-
+  <footer class="page-footer">
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
+    <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="footer-logo" href="https://htmlacademy.ru/">
-      <img class="footer-logo-icon" src="images/footer/html-logo.svg" alt="Логотип Html Academy" width="115" height="34">
+      <img class="footer-logo" src="images/footer/html-logo.svg" alt="Логотип Html Academy" width="115" height="34">
     </a>
-  </div>
-</footer>
+  </footer>
 </div>
 
 <div class="modal-container modal-container-close">
@@ -162,10 +158,10 @@
     <section class="modal-content">
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="arrival-date" for="arrival">Дата заезда:</label>
-            <div class="arrival-wrapper">
+          <label class="checkin-date" for="checkin">Дата заезда:</label>
+            <div class="checkin-wrapper">
             <div class="calendar-wrapper">
-            <input class="search-form-field arrival" type="text" id="arrival" name="arrival" value="" placeholder="Укажите дату" required>
+            <input class="search-form-field checkin" type="text" id="checkin" name="checkin" value="" placeholder="Укажите дату" required>
               <button class="calendar-button" type="button">
                 <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.3">
@@ -178,10 +174,10 @@
             </div>
           <p class="notification notification-incorrect">Мы не можем отправить вас в прошлое.</p>
           </div>
-        <label class="departure-date" for="departure">Дата выезда:</label>
-        <div class="departure-wrapper">
+        <label class="exit-date" for="exit">Дата выезда:</label>
+        <div class="exit-wrapper">
           <div class="calendar-wrapper">
-            <input class="search-form-field departure" type="text" id="departure" name="departure" value="" placeholder="Укажите дату" required>
+            <input class="search-form-field exit" type="text" id="exit" name="exit" value="" placeholder="Укажите дату" required>
             <button class="calendar-button" type="button">
               <svg class="calendar-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.3">
@@ -211,7 +207,7 @@
           </button>
         </div>
 
-        <label class="kids-number" for="kids">Дети:</label>
+        <label class="children-number" for="children">Дети:</label>
         <span class="tooltip">
           <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
             <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +224,7 @@
           <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
             вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
         </span>
-        <div class="kids-wrapper">
+        <div class="children-wrapper">
           <button class="button-minus" type="button">
             <svg class="plus-minus-icon" width="13" height="1" viewBox="0 0 13 1" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +232,7 @@
             </svg>
             <span class="visually-hidden">Уменьшить количество.</span>
           </button>
-          <input class="input-kids-number" type="number" id="kids" name="kids" value="1" step="1" min="1" max="10">
+          <input class="input-children-number" type="number" id="children" name="children" value="1" step="1" min="1" max="10">
           <button class="button-plus" type="button">
             <svg class="plus-minus-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
