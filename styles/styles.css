@@ -227,7 +227,7 @@ body {
   display: block;
   margin-top: 63px;
   margin-bottom: 23px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
@@ -524,7 +524,7 @@ body {
 .description-search {
   margin-top: 14px;
   margin-bottom: 56px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
@@ -536,7 +536,7 @@ body {
   margin: auto;
   margin-bottom: 93px;
   border-radius: 10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: bold;
@@ -1435,7 +1435,7 @@ input[type='number'] {
 .select-control-title {
   margin: 0;
   margin-top: 8px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   line-height: 39px;
   font-size: 30px;
