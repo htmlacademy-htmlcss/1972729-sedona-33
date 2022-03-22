@@ -316,7 +316,6 @@ body {
 .town-list-item {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -369,9 +368,9 @@ body {
 }
 
 .more-list-item {
+
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   width: 400px;
   margin: 0;
   padding: 0;
@@ -604,17 +603,18 @@ body {
 }
 
 .email {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
+  width: 100%;
   min-height: 410px;
+  color: #ffffff;
+  background-color: #756257;
   background-image: url("../images/background.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subtitle-email {
-  margin-top: 93px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
@@ -623,13 +623,22 @@ body {
   color: #FFFFFF;
 }
 
+.subtitle-email-first {
+  padding-top: 94px;
+}
+
 .description-email {
-  margin-top: 3px;
-  margin-bottom: 48px;
+  margin: 0;
+  padding-bottom: 46px;
+  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.description-email-first {
+  padding-top: 29px;
 }
 
 .newsletter-button {
@@ -1054,8 +1063,8 @@ input[type='number'] {
   padding: 0 72px;
   color: #ffffff ;
   background-image: url("../images/catalog-background.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hotels-search-title {
@@ -1124,6 +1133,7 @@ input[type='number'] {
   border: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .group-filter-group--infrastructure {
@@ -1364,13 +1374,7 @@ input[type='number'] {
   box-sizing: border-box;
 }
 
-.hotels-card-greenTree {
-  display: flex;
-  flex-direction: column;
-  min-height: 438px;
-  padding: 22px;
-  box-sizing: border-box;
-}
+
 
 .hotels-card-image:hover {
   opacity: 0.6;
@@ -1931,6 +1935,7 @@ input[type='number'] {
 .page-footer {
   min-height: 120px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 72px;
@@ -1939,6 +1944,7 @@ input[type='number'] {
 .footer-social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-left: -10px;
