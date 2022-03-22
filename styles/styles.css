@@ -247,8 +247,10 @@ body {
   margin-bottom: 65px;
   text-align: center;
   background-color: #928680;
-  background: url("../images/divider.svg") bottom no-repeat,
-  url("../images/index-background.jpg") center no-repeat;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
 }
 
 .logo {
@@ -314,6 +316,7 @@ body {
 .town-list-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -366,9 +369,9 @@ body {
 }
 
 .more-list-item {
-
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   width: 400px;
   margin: 0;
   padding: 0;
