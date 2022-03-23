@@ -221,17 +221,16 @@ body {
 
 .navigation-button:hover {
   background-color: #615048;
-  color: #FFFFFF;
 }
 
-.navigation-button:focus {
+.navigation-button:focus-visible {
   background-color: #615048;
-  color: #FFFFFF;
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .navigation-button:active {
-  background-color: #615048;;
+  background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -588,17 +587,16 @@ body {
 
 .button-search:hover {
   background-color: #615048;
-  color: #FFFFFF;
   }
 
-.button-search:focus {
+.button-search:focus-visible {
   background-color: #615048;
-  color: #FFFFFF;
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 4px #83b3d3;
+  outline: none;
 }
 
 .button-search:active {
-  background-color: #615048;;
+  background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1313,20 +1311,18 @@ input[type='number'] {
 }
 
 .button-submit:hover {
-  background-color: #68A2CA;
-  border-radius: 4px;
+  background-color: #68a2ca;
 }
 
-.button-submit:focus {
-  background-color: #68A2CA;
-  border: 3px solid #FFFFFF;
-  border-radius: 4px;
+.button-submit:focus-visible {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #ffffff;
+  outline: none;
 }
 
 .button-submit:active {
-  background-color: #68A2CA;
-  color: #FFFFFF;
-  opacity: 0.3;
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -1369,6 +1365,11 @@ input[type='number'] {
   gap: 10px;
 }
 
+.hotels-card-link {
+  list-style: none;
+  text-decoration: none;
+}
+
 .hotels-card {
   display: flex;
   flex-direction: column;
@@ -1377,8 +1378,6 @@ input[type='number'] {
   margin-top: 24px;
   box-sizing: border-box;
 }
-
-
 
 .hotels-card-image:hover {
   opacity: 0.6;
@@ -1449,14 +1448,18 @@ input[type='number'] {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark--checkbox:focus {
+.control-mark--checkbox:focus-within {
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.control-mark--radio {
+
 }
 
 .control-mark--checkbox:active {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .control-mark--radio {
@@ -1638,6 +1641,22 @@ input[type='number'] {
   cursor: pointer;
 }
 
+.button__more:hover {
+  background-color: #615048;
+}
+
+.button__more:focus-visible {
+  background-color: #615048;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.button__more:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .button__favorites {
   background-color: #83B3D3;
   padding: 0 22px;
@@ -1645,20 +1664,21 @@ input[type='number'] {
 }
 
 .button__favorites:hover {
-  background-color: rgba(104, 162, 202, 1);
+  background-color: #68a2ca;
   border: 1px solid #756257;
 }
 
-.button__favorites:focus {
-  background-color: #68A2CA;
-  border: 3px solid #756257;
+.button__favorites:focus-visible {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .button__favorites:active {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
   border: 1px solid #756257;
-  color: #FFFFFF;
-  opacity: 0.3;
+  outline: none;
 }
 
 .button__favorites-green {
@@ -1668,20 +1688,20 @@ input[type='number'] {
 }
 
 .button__favorites-green:hover {
-  background-color: rgba(108, 158, 66, 1);
-  border: 1px solid #756257;
+  background-color: #6c9e42;
+  border: none;
 }
 
-.button__favorites-green:focus {
-  background-color: rgba(108, 158, 66, 1);
-  border: 3px solid #756257;
+.button__favorites-green:focus-visible {
+  background-color: #6c9e42;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .button__favorites-green:active {
-  background-color: rgba(108, 158, 66, 1);
-  border: 1px solid #756257;
-  color: #FFFFFF;
-  opacity: 0.3;
+  background-color: #6c9e42;
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .show-more-wrapper {
@@ -1717,14 +1737,16 @@ input[type='number'] {
   background-color: #68A2CA;
 }
 
-.download-more-button:focus {
-  background-color: #68A2CA;
-  border: 3px solid #756257;
+.download-more-button:focus-visible {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .download-more-button:active {
-  background-color: #68A2CA;
-  color: rgba(255, 255, 255, 1);
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 
@@ -1777,23 +1799,28 @@ input[type='number'] {
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
-.pagination-link:focus {
-  background-color: #68A2CA;
-  border: 3px solid #756257;
-  border-radius: 4px;
+.pagination-link:focus-visible {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .pagination-link:active {
-  background-color: #68A2CA;
-  color: rgba(255, 255, 255, 1);
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
-.pagination-link-current:visited {
-  background-color: #F2F2F2;
+.pagination-link-current,
+.pagination-link-current:hover,
+.pagination-link-current:focus-visible,
+.pagination-link-current:active {
   color: #000000;
+  background-color: #f2f2f2;
+  outline: none;
 }
 
 .select-control-number {
@@ -1920,18 +1947,17 @@ input[type='number'] {
 }
 
 .subscribe-button:hover {
-  background: #68A2CA;
-  color: rgba(255, 255, 255, 1);
+  background-color: #68a2ca;
 }
 
-.subscribe-button:focus {
-  background-color: #68A2CA;
-  color: #FFFFFF;
-  border: 3px solid #756257;
+.subscribe-button:focus-visible {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .subscribe-button:active {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -2022,15 +2048,15 @@ a[href^="tel:"] {
   color: #756257;
 }
 
-.phone-number:focus {
-  outline: none;
+.phone-number:focus-visible {
   color: #756257;
-  border: 3px solid #68A2CA;
-  border-radius: 10px;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .phone-number:active {
-  color: rgba(117, 98, 87, 1);
+  color: #756257;
+  opacity: 0.3;
 }
 
 .a .footer-logo-icon {
@@ -2043,16 +2069,18 @@ a[href^="tel:"] {
   background-color: #FFFFFF;
 }
 
-.footer-logo-icon:hover path {
-  fill: rgba(117, 98, 87, 1);
+.footer-logo:hover .footer-logo-icon path {
+  fill: #756257;
 }
 
-.footer-logo-icon:focus path {
-  fill: rgba(117, 98, 87, 1);
-  border: 3px solid #68A2CA;
-  border-radius: 10px;
+.footer-logo:focus-visible {
+  fill: #756257;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
-.footer-logo-icon:active path {
-  fill: rgba(117, 98, 87, 1);
+.footer-logo-icon:active {
+  fill: #756257;
+  opacity: 0.3;
+  color: #756257;
 }
