@@ -344,7 +344,7 @@ body {
 
 .advantage-second-item {
   margin: auto;
-  height: 384px;
+  min-height: 384px;
   background-color: #83B3D3;
 }
 
@@ -565,6 +565,7 @@ body {
   background-color: #FFFFFF;
 
 }
+
 .button-search {
   padding: 12px 148px;
   margin: auto;
@@ -1084,12 +1085,13 @@ input[type='number'] {
   align-items: center;
   margin-right: 6px;
 }
+
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   display: block;
   width: 5px;
   height: 8px;
-  background-image: url('../images/hotels-catalog/arrow.svg');
+  background-image: url("../images/hotels-catalog/arrow.svg");
   margin-left: 6px;
 }
 
@@ -1102,13 +1104,16 @@ input[type='number'] {
   text-decoration: none;
   border-radius: 4px;
 }
+
 .breadcrumbs-link:hover {
   opacity: 0.6;
 }
+
 .breadcrumbs-link:focus {
   outline: 3px solid #83B3D3;
   opacity: 1;
 }
+
 .breadcrumbs-link:active {
   opacity: .3;
 }
@@ -1185,9 +1190,11 @@ input[type='number'] {
   font-weight: 400;
   position: relative;
 }
+
 .price-field:nth-of-type(2) {
   margin-left: -2px;
 }
+
 .price-field__placeholder {
   position: absolute;
   opacity: .3;
