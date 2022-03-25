@@ -1541,8 +1541,9 @@ input[type='number'] {
 }
 
 .select-control-list:active {
-  outline: 2px solid #E6E6E6;
+  border: 2px solid #E6E6E6;
   color: rgba(51, 51, 51, 0.3);
+  outline: none;
 }
 
 .select-sort:active {
@@ -2066,6 +2067,7 @@ input[type='number'] {
   fill: #68a2ca;
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
+  border-radius: 10px;
 }
 
 .footer-social-icon:active {
@@ -2097,6 +2099,7 @@ a[href^="tel:"] {
   color: #756257;
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
+  border-radius: 10px;
 }
 
 .phone-number:active {
@@ -2122,6 +2125,7 @@ a[href^="tel:"] {
   fill: #756257;
   box-shadow: inset 0 0 0 3px #83b3d3;
   outline: none;
+  border-radius: 10px;
 }
 
 .footer-logo-icon:active {
