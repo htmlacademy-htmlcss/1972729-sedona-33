@@ -1372,6 +1372,7 @@ input[type='number'] {
 
 .button-reset:active {
   opacity: 0.3;
+  outline: none;
 }
 
 .hotels-list {
@@ -2051,39 +2052,32 @@ input[type='number'] {
 }
 
 .footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  display: block;
   width: 40px;
   height: 40px;
   box-sizing: border-box;
   background-color:#ffffff;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px;
+  border: 3px solid transparent;
 }
 
-.footer-social-icon {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  fill: #83b3d3;
-}
-
-.footer-social-icon-fb {
-  padding-left: 5px;
-}
-
-.footer-social-icon:hover {
+.footer-social-icon:hover path {
   fill: #68a2ca;
 }
 
 .footer-social-link:focus-visible {
   fill: #68a2ca;
-  box-shadow: 0 0 0 3px #83b3d3;
+  border-color: #83b3d3;
   outline: none;
-  border-radius: 10px;
+
 }
 
-.footer-social-icon:active {
+.footer-social-icon:active path {
   fill: #68a2ca;
   fill-opacity: 0.12;
 }
@@ -2113,6 +2107,7 @@ a[href^="tel:"] {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .phone-number:active {
@@ -2135,10 +2130,11 @@ a[href^="tel:"] {
 }
 
 .footer-logo:focus-visible {
-  fill: #756257;
+  color: #756257;
   box-shadow: inset 0 0 0 3px #83b3d3;
-  outline: none;
   border-radius: 10px;
+  padding: 10px;
+  outline: none;
 }
 
 .footer-logo-icon:active {
