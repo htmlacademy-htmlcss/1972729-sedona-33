@@ -660,11 +660,11 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
+/*
 .modal-container-close {
   display: none;
   }
-
+*/
 .modal {
   position: relative;
   margin: auto;
@@ -707,8 +707,8 @@ body {
 }
 
 .modal-close-button:active {
-  background-color: #e6e6e6;
-  background-image: url("../images/modal-close-active.svg")
+  background-color: #E6E6E6;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -810,7 +810,7 @@ body {
   border: none;
 }
 
-.calendar-button {
+.calendar-icon {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -906,11 +906,13 @@ body {
 .button-plus:hover .plus-minus-icon {
   fill: #000000;
   opacity: 1;
+  outline: none;
 }
 
 .button-minus:hover .plus-minus-icon {
   fill: #000000;
   opacity: 1;
+  outline: none;
 }
 
 .button-plus:focus-within,
@@ -921,10 +923,18 @@ body {
   outline: none;
 }
 
-.button-plus:active .plus-minus-icon,
+.button-plus:active .plus-minus-icon {
+  fill: #000000;
+  opacity: 0.2;
+  box-shadow: none;
+  outline: none;
+}
+
 .button-minus:active .plus-minus-icon {
   fill: #000000;
   opacity: 0.2;
+  box-shadow: none;
+  outline: none;
 }
 
 .search-form-button {
