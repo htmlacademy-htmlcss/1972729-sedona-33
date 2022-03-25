@@ -1518,23 +1518,28 @@ input[type='number'] {
   font-size: 18px;
   line-height: 23px;
   font-style: normal;
-  color: #000000;
+  color: #333333;
   background-color: #FFFFFF;
   min-width: 288px;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
+  -webkit-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  background: url("../images/hotels-catalog/select-arrow.svg") no-repeat 93% 50%;
 }
 
 .select-control-list:hover {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .select-control-list:focus {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .select-control-list:active {
-  border: 2px solid #E6E6E6;
-  color: rgba(51, 51, 51, 1);
+  outline: 2px solid #E6E6E6;
+  color: rgba(51, 51, 51, 0.3);
 }
 
 .select-sort:active {
@@ -1638,6 +1643,7 @@ input[type='number'] {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .button {
@@ -1654,7 +1660,7 @@ input[type='number'] {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756257;
-  border: none;
+  outline: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -1682,7 +1688,7 @@ input[type='number'] {
 
 .button__favorites:hover {
   background-color: #68a2ca;
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
 }
 
 .button__favorites:focus-visible {
@@ -1694,7 +1700,7 @@ input[type='number'] {
 .button__favorites:active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
-  border: 1px solid #756257;
+  outline: 1px solid #756257;
   outline: none;
 }
 
@@ -1706,7 +1712,7 @@ input[type='number'] {
 
 .button__favorites-green:hover {
   background-color: #6c9e42;
-  border: none;
+  outline: none;
 }
 
 .button__favorites-green:focus-visible {
@@ -1718,7 +1724,7 @@ input[type='number'] {
 .button__favorites-green:active {
   background-color: #6c9e42;
   color: rgba(255, 255, 255, 0.3);
-  border: none;
+  outline: none;
 }
 
 .show-more-wrapper {
@@ -1851,6 +1857,24 @@ input[type='number'] {
   color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  -webkit-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  background: url("../images/hotels-catalog/select-arrow.svg") no-repeat 87% 50%;
+}
+
+.select-control-number:hover {
+  border: 2px solid #83b3d3;
+}
+
+.select-control-number:focus-visible {
+  border: 2px solid #83b3d3;
+  outline: none;
+}
+
+.select-control-number:active {
+  border: 2px solid #e6e6e6;
+  color: rgba(51, 51, 51, 0.3);
 }
 
 .email-hotel {
