@@ -2089,6 +2089,7 @@ input[type='number'] {
   color: #000000;
   background-color: #FFFFFF;
   list-style: none;
+  padding: 12px;
 }
 
 a[href^="tel:"] {
@@ -2113,6 +2114,10 @@ a[href^="tel:"] {
 .phone-number:active {
   color: #756257;
   opacity: 0.3;
+}
+
+.footer-logo {
+  padding: 15px 0;
 }
 
 .footer-logo-icon a {
