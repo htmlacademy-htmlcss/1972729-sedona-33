@@ -2138,7 +2138,6 @@ a[href^="tel:"] {
   color: #756257;
   box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 10px;
-  padding: 10px;
   outline: none;
 }
 
