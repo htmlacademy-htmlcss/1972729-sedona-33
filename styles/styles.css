@@ -1375,6 +1375,7 @@ input[type='number'] {
 .hotels-card-link {
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
 
 .hotels-card {
@@ -1582,16 +1583,19 @@ input[type='number'] {
 .sort-button-icons:hover {
   border: 2px solid #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .sort-button-icons:focus {
   border: 2px solid #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .sort-button-icons:active {
   border: 2px solid #000000;
   border-radius: 4px;
+  outline: none;
 }
 
 .hotels-card-title {
