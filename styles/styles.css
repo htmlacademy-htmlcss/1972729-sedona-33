@@ -1531,11 +1531,13 @@ input[type='number'] {
 }
 
 .select-control-list:hover {
-  outline: 2px solid #83B3D3;
+  border: 2px solid #83B3D3;
+  outline: none;
 }
 
 .select-control-list:focus {
-  outline: 2px solid #83B3D3;
+  border: 2px solid #83B3D3;
+  outline: none;
 }
 
 .select-control-list:active {
