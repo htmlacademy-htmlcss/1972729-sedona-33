@@ -1094,6 +1094,7 @@ input[type='number'] {
   height: 8px;
   background-image: url("../images/hotels-catalog/arrow.svg");
   margin-left: 6px;
+  opacity: 0.3;
 }
 
 .breadcrumbs-link {
